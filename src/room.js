@@ -287,6 +287,8 @@ export default (onPeer, onSelfLeave) => {
 
     getPeers: () => keys(peerMap),
 
+    getPeersMap: () => peerMap,
+
     addStream: (stream, peerId) => {
       if (typeof peerId === 'string') {
         const peer = peerMap[peerId]
